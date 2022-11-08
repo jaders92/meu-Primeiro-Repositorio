@@ -1,0 +1,63 @@
+/*  um objeto é uma coleção dinamica(posso adicionar caracteristicas ou remover) de chave e valor , chave é o que antecede o valor , como, (nome:) e valor o que esta dentro da chave como, nome: 'vitor'
+exemplo de objetos literal:
+const vitor = {
+   nome: 'vitor J Guerra'
+    idade: 25
+};
+para imprimir pode escolher qual das variaveis dentro que se quer ver, por exemplo:
+
+   console.log(vitor.nome);
+   console.log(vitor.idade);
+
+ou o objeto inteiro:
+
+console.log(vitor);
+
+é possivel imcrementar o objeto mesmo de fora:
+
+vitor.altura = 1.69;
+console.log(vitor);
+
+no terminal aparece: 
+{nome: 'vitor j guerra', idade: 25, altura: 1.69}
+
+para remover algo do objeto ex:
+
+delete vitor.nome;
+console.log(vitor);
+
+no terminal aparece: 
+{ idade: 25, altura: 1.69}
+
+no javascript conseguimos usar dentro dos objetos funçoes que passam a se chamar metodos.
+ex:
+
+const pessoa = {
+   nome: 'vitor J Guerra'
+    idade: 25
+
+    descrever: function () {
+        
+       console.log('Meu nome é ${this.nome} e minha idade é ${this.idade}' );
+    }
+};
+
+pessoa.nome= 'Renan';
+pessoa.idade= 30;
+
+pessoa.desccrever();
+
+obs:.o "this" se transforma no objeto , por esta dentro de uma funcao no objeto.*/
+
+/* 
+pessoa.descrever = function() {
+   console.log('Meu nome é ${this.nome}');
+
+}
+ pessoa.descrever(); 
+
+ sintaxe mais dimamica:
+
+ 
+ console.log(pessoa['nome']);
+ pessoa['nome'] = 'teste'*/
