@@ -1,5 +1,3 @@
-# meu-Primeiro-Repositorio
-estudos de javascript
 /* como declarar função: 
 function nomedafunçao(){
     console.log();
@@ -49,3 +47,4 @@ function main() {
 function calcularJuros(){
 
 }*/
+
